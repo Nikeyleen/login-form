@@ -1,0 +1,136 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: montserrat, sans-serif;
+}
+input, button{
+  appearance: none;
+  background: none;
+  border: none;
+  outline: none;
+  /* border: 1px solid blue; */
+
+}
+.App{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: #53565a; */
+  background-image: linear-gradient(to right, pink, lightsalmon, Darksalmon);
+
+  /* background-image: linear-gradient(to left top, blue, red);; */
+} 
+form{
+  display: block;
+  /* border: 10px solid black; */
+  position: relative;
+}
+form::after{
+  content: '';
+  display: block;
+  position: absolute;
+  /* border: 10px solid black; */
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  z-index: 1;
+  background: linear-gradient(45deg, #29b2c4, #21cfba, #05fca2);
+  /* background-image:  linear-gradient(to left top, blue, red); */
+}
+form .form-inner{
+  position: relative;
+  display: block;
+  padding: 30px;
+  z-index: 2;
+  background-color:#d4e398;  
+}
+form .form-inner h2{
+  color: #f51bc6;
+  font-size: 28px;
+  font-weight: 500;
+  margin-bottom: 30px;
+
+}
+form .form-inner .form-group{
+  display: block;
+  width: 300px;
+  margin-bottom: 15px;
+
+}
+#ok {
+  border: 1px solid black;
+}
+#submit {
+  border: 1px solid black;
+}
+#male{
+  display: block;
+  width: 300px;
+  border: 1px solid black;
+  margin-bottom: 15px;
+  color:maroon;
+} 
+.form-male:hover{
+  background-position: 100% 0%;
+}
+.form-inner .form-group label{
+  display: block;
+  color: #8c38ff;
+  font-size: 12px;
+  margin-bottom: 5px;
+  transition: 0.4s;
+}
+.form-inner .form-group:focus-within label{
+  color: #fe4880;
+}
+form .form-inner .form-group input{
+  display: block;
+  background-color:lightgray;
+  width: 100%;
+  padding: 10px 15px;
+  border-radius: 8px ;
+  transition: 0.4s;
+}
+form .form-inner .form-group:focus{
+box-shadow:  0px 0px 3px rgba(0 0 0 0.2); 
+}
+form .form-inner input[type="submit"],
+.welcome button{
+  display: inline-block;
+  padding: 10px 15px;
+border-radius: 8px;
+/* border: 15px solid black; */
+/* background-image: linear-gradient (to top bottom, blue , red);   */
+background: linear-gradient(45deg , #fe4880, #f1f505, #d505f5);
+/* background-color: #fe4880; */
+background-size: 200%;
+background-position: 0%;
+transition: 0.4s;
+font-weight: 700;
+cursor: pointer;
+color: black;
+}
+form .form-inner input[type="submit"]:hover,
+.welcome button:hover{
+  background-position: 100% 0%;
+}
+.welcome{
+  width: 100%;
+  max-width: 400px;
+  background-color: #fff;
+  padding: 15px 30px;
+}
+.welcome h2{
+  color: #888;
+  font-size: 28px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+.welcome h2 span{
+  color: #fe4880;
+  font-weight: 700;
+
+}
